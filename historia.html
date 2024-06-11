@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia - Psicología</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <style>
-        /* Estilos similares a los de index.html */
+        body {
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Rosa claro */
+            color: #4a148c; /* Morado oscuro */
+        }
+        header {
+            background-color: #f8bbd0; /* Rosa pastel */
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #4a148c;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ce93d8; /* Morado claro */
+        }
+        nav a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ba68c8;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section h2 {
+            color: #880e4f; /* Morado medio */
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .media {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #f8bbd0;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -26,10 +78,7 @@
         <img src="https://via.placeholder.com/800x400" alt="Historia de la psicología">
         <div class="media">
             <h3>Video sobre la historia de la psicología</h3>
-            <video controls>
-                <source src="ruta-al-video.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de video.
-            </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -43,3 +92,4 @@
     </audio>
 </body>
 </html>
+
