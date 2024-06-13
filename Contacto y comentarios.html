@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Comentarios - Psicología</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Rosa claro */
+            color: #4a148c; /* Morado oscuro */
+        }
+        header {
+            background-color: #f8bbd0; /* Rosa pastel */
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #4a148c;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ce93d8; /* Morado claro */
+        }
+        nav a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ba68c8;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section h2 {
+            color: #880e4f; /* Morado medio */
+        }
+        .section form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f8bbd0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .section input, .section textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .section button {
+            background-color: #880e4f;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section button:hover {
+            background-color: #4a148c;
+        }
+        footer {
+            background-color: #f8bbd0;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Psicología</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="ramas.html">Ramas</a>
+        <a href="galeria.html">Galería</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section class="section">
+        <h2>Contacto</h2>
+        <form action="enviar_contacto.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>Comentarios</h2>
+        <form action="enviar_comentario.php" method="post">
+            <label for="comment">Deja tu comentario:</label>
+            <textarea id="comment" name="comment" rows="5" required></textarea>
+
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Psicología. Todos los derechos reservados.</p>
+    </footer>
+
+    <audio autoplay loop>
+        <source src="ruta-a-la-musica.mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+</body>
+</html>
