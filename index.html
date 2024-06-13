@@ -50,6 +50,34 @@
         .media {
             margin-top: 20px;
         }
+        .section form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f8bbd0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .section input, .section textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .section button {
+            background-color: #880e4f;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section button:hover {
+            background-color: #4a148c;
+        }
         footer {
             background-color: #f8bbd0;
             text-align: center;
@@ -70,6 +98,7 @@
         <a href="ramas.html">Ramas</a>
         <a href="galeria.html">Galería</a>
         <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
 
     <section class="section">
@@ -84,6 +113,28 @@
             <h3>Video introductorio</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/UEiqJQgb0-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+    </section>
+    
+    <section class="section">
+        <h2>Contacto</h2>
+        <form action="enviar_contacto.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <section class="section">
+        <h2>Comentarios</h2>
+        <form action="enviar_comentario.php" method="post">
+            <label for="comment">Deja tu comentario:</label>
+            <textarea id="comment" name="comment" rows="5" required></textarea>
+            <button type="submit">Enviar Comentario</button>
+        </form>
     </section>
     
     <footer>
