@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - Psicología</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <style>
-        /* Estilos similares a los de index.html */
+        body {
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Rosa claro */
+            color: #4a148c; /* Morado oscuro */
+        }
+        header {
+            background-color: #f8bbd0; /* Rosa pastel */
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #4a148c;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ce93d8; /* Morado claro */
+        }
+        nav a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ba68c8;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery img {
+            margin: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #f8bbd0;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -20,17 +70,16 @@
         <a href="blog.html">Blog</a>
     </nav>
 
-    <section class="section">
-        <h2>Galería</h2>
-        <p>En esta sección, encontrarás una colección de imágenes y recursos visuales relacionados con la psicología. Desde fotos históricas hasta representaciones modernas de conceptos psicológicos.</p>
-        <img src="https://via.placeholder.com/800x400" alt="Galería de psicología">
-        <div class="media">
-            <h3>Video de la galería</h3>
-            <video controls>
-                <source src="ruta-al-video.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de video.
-            </video>
-        </div>
+    <section class="gallery">
+        <h2>Galería de Imágenes</h2>
+        <img src="https://www.unir.net/wp-content/uploads/sites/22/2021/10/psicologiaint1.jpg" alt="Psicología">
+        <img src="https://via.placeholder.com/800x400" alt="Historia de la psicología">
+        <img src="https://via.placeholder.com/800x400" alt="Psicología Clínica">
+        <img src="https://via.placeholder.com/800x400" alt="Psicología Educativa">
+        <img src="https://via.placeholder.com/800x400" alt="Psicología Organizacional">
+        <img src="https://via.placeholder.com/800x400" alt="Psicología del Desarrollo">
+        <img src="https://via.placeholder.com/800x400" alt="Psicología Social">
+        <img src="https://via.placeholder.com/800x400" alt="Neuropsicología">
     </section>
 
     <footer>
